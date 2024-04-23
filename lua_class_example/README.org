@@ -1,0 +1,5 @@
+copy from [[https://www.cnblogs.com/sylvan/p/8478366.html][lua oop]]
+
+#+begin_src shell
+lua testClass.lua
+#+end_src
