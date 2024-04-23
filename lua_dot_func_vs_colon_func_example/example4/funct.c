@@ -42,8 +42,8 @@ LUA_API EXP_FUNC int luaopen_liblua_funct(lua_State *L) {
   return 1;
 }
 
-
-// gcc funct.c -I/usr/local/include/lua -llua -shared -o funct.so
+// mkdir -p build
+// gcc funct.c -I/usr/local/include/lua -llua -shared -o build/liblua_funct.so
 
 // copy from https://www.cnblogs.com/lzpong/p/13426782.html
 // modified by chatgpt

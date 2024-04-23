@@ -12,6 +12,7 @@ print("\":\"调用:")
 obj:func(1, "str")
 
 
--- gcc funct.c -I/usr/local/include/lua -llua -shared -o funct.so
+-- mkdir -p build
+-- gcc funct.c -I/usr/local/include/lua -llua -shared -o build/liblua_funct.so
 -- lua example4.lua
 -- copy from https://www.cnblogs.com/lzpong/p/13426782.html
