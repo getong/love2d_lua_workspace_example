@@ -33,17 +33,13 @@ static int _c_l_testfunc(lua_State *L) {
 #define EXP_FUNC
 #endif
 
-/* LUA_API EXP_FUNC int luaopen_funct(lua_State *L) { */
-/*   lua_pushcfunction(L, _c_l_testfunc); */
-/*   return 1; */
-/* } */
-LUA_API EXP_FUNC int luaopen_liblua_funct(lua_State *L) {
+LUA_API EXP_FUNC int luaopen_funct(lua_State *L) {
   lua_pushcfunction(L, _c_l_testfunc);
   return 1;
 }
 
 // mkdir -p build
-// gcc funct.c -I/usr/local/include/lua -llua -shared -o build/liblua_funct.so
+// gcc funct.c -I/usr/local/include/lua -llua -shared -o build/funct.so
 
 // copy from https://www.cnblogs.com/lzpong/p/13426782.html
 // modified by chatgpt
