@@ -42,3 +42,4 @@ luac.out
 .ccls-cache
 compile_commands.json
 **/build
+**/.DS_Store
